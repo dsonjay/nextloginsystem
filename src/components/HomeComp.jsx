@@ -17,7 +17,7 @@ const HomeComp = () => {
 
     const fetchDataFunc = async () => {
         const userId = localStorage.getItem("userId");
-        const fetchData = await Fetch(`http://localhost:3000/api/user/${userId}`);
+        const fetchData = await Fetch(`/api/user/${userId}`);
         const res = await fetchData.json();
         return res;
     }
